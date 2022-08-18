@@ -14,7 +14,7 @@ app.use(bodyParser.json({limit: '12mb'}));
 app.use(bodyParser.urlencoded({limit: '12mb', extended: true}));
 app.use(express.static('./uploads'))
 
-app.use(userRoutes);
+app.use("/events", userRoutes);
 
 app.listen(port,(err)=>{
     if(err){
