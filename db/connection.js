@@ -1,6 +1,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
-const URL = "mongodb://localhost/events";
+const URL = "mongodb+srv://admin:admin123@cluster0.6leob20.mongodb.net/motorq?retryWrites=true&w=majority";
 
 mongoose.connect(URL,{
     useUnifiedTopology: true ,
